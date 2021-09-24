@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MEGABOX</title>
+  <link href="css/font.css" rel="stylesheet" type="text/css">
+  <link href="css/reset.css" rel="stylesheet" type="text/css">
+  <link href="css/main.css" rel="stylesheet" type="text/css">
+  <link href="css/swiper.css" rel="stylesheet">
+
+  <script src="js/html5shiv.min.js"></script>
+  <script src="js/swiper-4.5.1.min.js"></script>
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  
+
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <div class="inner">
+        <h1><a href="index.html">MEGABOX</a></h1>
+        <nav>
+          <ul>
+            <li><a href="sub01.html">MOVIE</a></li>
+            <li><a href="#">TICKET</a></li>
+            <li><a href="#">CINEMA</a></li>
+            <li><a href="#">EVENT</a></li>
+            <li><a href="#">STORE</a></li>
+          </ul>
+        </nav>
+        <a href="#" class="nav_btn">
+          <span>메뉴열기</span><span></span><span></span>
+        </a>
+        <div class="side_nav"> 
+          <a href="#" class="login">로그인</a>
+          <a href="#" class="mypage">마이페이지</a>
+          <a href="#" class="heart">찜</a>
+        </div><!--.side_nav-->
+      </div><!--.inner-->
+    </header>
+
+
+    
+
+    <div class="slide">
+
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="./img/slide2.png" alt=""></div>
+          <div class="swiper-slide"><img src="./img/slide_1.png" alt=""></div>
+          <!-- <div class="swiper-slide">슬라이드3</div> -->
+        </div>
+        <div class="swiper-button-next"><img src="img/arrow_right.png" alt="다음화살표"></div>
+        <div class="swiper-button-prev"><img src="img/arrow_left.png" alt="이전화살표"></div></div>
+        <div class="swiper-pagination"></div>
+      </div>
+      
+    </div><!--.slide-->
+    
+    <div class="ticket_box">
+      <div class="inner">
+        <ul class="clear">
+          <li class="search">
+            <input type="text" placeholder="영화명을 입력해주세요">
+            <button type="button"><img src="img/search.png" alt="돋보기 검색아이콘"></button>
+          </li>
+          <li class="t_box01"><a href="#"><img src="img/icon_movieschedule.png" alt="상영시간표 아이콘">상영시간표</a></li>
+          <li class="t_box01"><a href="#"><img src="img/icon_boxoffice.png" alt="박스오피스 아이콘">박스오피스</a></li>
+          <li class="t_box01"><a href="#"><img src="img/icon_ticket.png" alt="빠른예매 아이콘">빠른예매</a></li>
+        </ul>
+
+      </div><!--.inner-->
+    </div><!--.ticket_box-->
+
+    <section id="moviechart">
+      <div class="inner">
+        <h2>무비차트</h2>
+        <p class="title_en">Moviechart</p>
+        <div class="mc_box swiper mySwiper2">
+          <ul class="clear swiper-wrapper">
+            <li class="movie01 swiper-slide">
+              <a href="sub01.html">
+                <div class="over_box">
+                  <img src="img/poster1.png" alt="영화 포스터 이미지">
+                  <div class="over"><p>예매하기</p></div>
+                </div>
+                <p class="m_name">싱크홀</p>
+                <p class="m_txt">예매율 40.8%ㅣ<img src="img/star_mini.png" alt="별점이미지" class="star">9.2</p>
+              </a>
+              
+            </li>
+            <li class="movie02 swiper-slide">
+              <a href="#">
+                <div class="over_box">
+                  <img src="img/poster2.png" alt="영화 포스터 이미지">
+                  <div class="over"><p>예매하기</p></div>
+                </div>
+                <p class="m_name">모가디슈</p>
+                <p class="m_txt">예매율 35.5%ㅣ<img src="img/star_mini.png" alt="별점이미지" class="star">9.1</p>
+              </a>
+            </li>
+            <li class="movie03 swiper-slide">
+              <a href="#">
+                <div class="over_box">
+                  <img src="img/poster3.png" alt="영화 포스터 이미지">
+                  <div class="over"><p>예매하기</p></div>
+                </div>
+                <p class="m_name">올드</p>
+                <p class="m_txt">예매율 17.9%ㅣ<img src="img/star_mini.png" alt="별점이미지" class="star">8.9</p>
+              </a>
+            </li>
+            <li class="movie04 swiper-slide">
+              <a href="#">
+                <div class="over_box">
+                  <img src="img/poster4.png" alt="영화 포스터 이미지">
+                  <div class="over"><p>예매하기</p></div>
+                </div>
+                <p class="m_name">코다</p>
+                <p class="m_txt">예매율 8.8%ㅣ<img src="img/star_mini.png" alt="별점이미지" class="star">7.3</p>
+              </a>
+            </li>
+            <li class="movie05 swiper-slide">
+              <a href="#">
+                <div class="over_box">
+                  <img src="img/poster5.png" alt="영화 포스터 이미지">
+                  <div class="over"><p>예매하기</p></div>
+                </div>
+                <p class="m_name">기적</p>
+                <p class="m_txt">예매율 8.8%ㅣ<img src="img/star_mini.png" alt="별점이미지" class="star">7.3</p>
+              </a>
+            </li>
+            <li class="movie06 swiper-slide">
+              <a href="#">
+                <div class="over_box">
+                  <img src="img/poster6.png" alt="영화 포스터 이미지">
+                  <div class="over"><p>예매하기</p></div>
+                </div>
+                <p class="m_name">여름날우리</p>
+                <p class="m_txt">예매율 8.8%ㅣ<img src="img/star_mini.png" alt="별점이미지" class="star">7.0</p>
+              </a>
+            </li>
+            <li class="movie02 swiper-slide">
+              <a href="#">
+                <div class="over_box">
+                  <img src="img/poster7.png" alt="영화 포스터 이미지">
+                  <div class="over"><p>예매하기</p></div>
+                </div>
+                <p class="m_name">샹치</p>
+                <p class="m_txt">예매율 35.5%ㅣ<img src="img/star_mini.png" alt="별점이미지" class="star">8.3</p>
+              </a>
+            </li>
+            <li class="movie02 swiper-slide">
+              <a href="#">
+                <div class="over_box">
+                  <img src="img/poster8.png" alt="영화 포스터 이미지">
+                  <div class="over"><p>예매하기</p></div>
+                </div>
+                <p class="m_name">너의이름은</p>
+                <p class="m_txt">예매율 35.5%ㅣ<img src="img/star_mini.png" alt="별점이미지" class="star">6.9</p>
+              </a>
+            </li>
+            <li class="movie02 swiper-slide">
+              <a href="#">
+                <div class="over_box">
+                  <img src="img/poster4.png" alt="영화 포스터 이미지">
+                  <div class="over"><p>예매하기</p></div>
+                </div>
+                <p class="m_name">모가디슈</p>
+                <p class="m_txt">예매율 35.5%ㅣ<img src="img/star_mini.png" alt="별점이미지" class="star">9.1</p>
+              </a>
+            </li>
+          </ul>
+        </div><!--.mc_box-->
+        <div class="swiper-button-next"><img src="img/sc_right.png" alt="다음버튼"></div>
+        <div class="swiper-button-prev"><img src="img/sc_left.png" alt="이전버튼"></div>
+    
+      </div><!--.inner-->
+    </section><!--#moviechart-->
+
+    <section id="trailer" class="mySwiper3">
+      <h2>예고편</h2>
+      <p class="title_en">Trailer</p>
+      <ul class="clear swiper-wrapper">
+        <li class="trailer1 swiper-slide">
+          <!-- <iframe src="https://www.youtube.com/embed/_Pg2ieBoPQA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+          <a href="video/movie1.mp4"><img src="img/trailer1.png"></a>
+        </li>
+        <li class="trailer2 swiper-slide">
+          <iframe 
+          src="https://www.youtube.com/embed/zE36E8_hazE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+        </li>
+        <li class="trailer1 swiper-slide">
+          <iframe src="https://www.youtube.com/embed/yfSMTFzw-Kw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </li>
+        <li class="trailer1 swiper-slide">
+          <iframe src="https://www.youtube.com/embed/BdkSkI61aGo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </li>
+        <li class="trailer1 swiper-slide">
+          <iframe src="https://www.youtube.com/embed/yC62Q_qAdgY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </li>
+        
+      </ul>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+     
+      <a href="#" class="more">View More</a>
+    </section><!--#trailer-->
+    
+    <section id="mbox_ticker">
+      <div class="inner">
+        <div class="mbox_txtbox">
+          <h2>M-BOX TICKET</h2>
+          <p class="mbox_txt">메가박스가 제안하는<br> 
+          영화를 가장 잘 간직하는 방법 </p>
+        </div>
+        
+          <ul class="mbox_img clear">
+            <li>
+              <a href=#><img src="img/ticket01.png" alt="M-BOX티켓 이미지1"></a>
+              <p>No.34<br>프리 가이</p>
+            </li>
+            <li>
+              <a href=#><img src="img/ticket02.png" alt="M-BOX티켓 이미지2"></a>
+              <p>No.33<br>수어사이드 스쿼드</p>
+            </li>
+            <li>
+              <a href=#><img src="img/ticket03.png" alt="M-BOX티켓 이미지3"></a>
+              <p>No.36<br>뷰티풀 투모로우</p>
+            </li>
+          </ul>
+        
+        <a href="#" class="more">View More</a>
+        <div class="bg_txt">
+          <img src="img/megabox_txt.png" alt="메가박스 이미지">
+        </div>
+      </div><!--.inner-->
+    </section><!--#mbox_ticker-->
+
+    <section id="cinema">
+      <h2>DOLBY CINEMA</h2>
+      <p>단지, 보고, 듣는 영화에 만족할 수 없는 당신을 위해!<br>
+        드라마틱한 이미지, 입체적인 사운드, 몰입에 최적화 된 공간까지!</p>
+      <a href="#" class="more">View More</a>
+    </section><!--#cinema-->
+
+    <section id="moviefeed">
+      <div class="inner">
+        <h2>무비피드</h2>
+        <ul class="feed_box clear">
+          <li class="box1 clear">
+            <a href="#">
+              <div class="feed_img"><img src="img/feed01.png" alt="피드이미지1"></div>
+              <div class="feed_txtbox">
+                <p class="feed_title">금요일 박스오피스</p>
+                <p class="feed_txt">국내는 물론 해외까지! 지금 관람객에게 사랑받는 영화는 무엇일까? 1위는 삼진그룹 영어토익반 그럼 2, 3, 4, 5위는?</p>
+              </div>
+            </a>
+          </li>
+
+          <li class="box1 clear">
+            <a href="#">
+              <div class="feed_img"><img src="img/feed02.png" alt="피드이미지2"></div>
+              <div class="feed_txtbox">
+                <p class="feed_title">화요일 지금 뜨는 영화</p>
+                <p class="feed_txt">사.상.초.유! 도심 속 초대형 재난 발생! 서울 입성과 함께 내 집 마련의 꿈을 이룬 가장 ‘동원’ 이사 첫날부터 프로 참견러 ‘만수’와 사사건건 부딪힌다.</p>
+              </div>
+            </a>
+          </li>
+
+          <li class="box1 clear">
+            <a href="#">
+              <div class="feed_img"><img src="img/feed03.png" alt="피드이미지3"></div>
+              <div class="feed_txtbox">
+                <p class="feed_title">9월 1주 무비 헤드라인</p>
+                <p class="feed_txt">영화덕후라면 놓쳐서는 안될 영화계 소식! 〈여름날 우리〉 9/25개봉 확정!</p>
+              </div>
+            </a>
+          </li>
+        </ul><!--.feed_box-->
+        <a href="#" class="more">View More</a>
+      </div><!--.inner-->
+    </section><!--#moviefeed-->
+
+    <footer>
+      
+        <div class="f_box01">
+          <div class="inner">
+            <ul class="f_link clear">
+              <li><a href="#">회사소개</a></li>
+              <li><a href="#">인재채용</a></li>
+              <li><a href="#">사회공헌</a></li>
+              <li><a href="#">이용약관</a></li>
+              <li><a href="#">개인정보처리방침</a></li>
+              <li><a href="#">윤리경영</a></li>
+            </ul>
+            <button type="button" class="f_search"><img src="img/f_search.png" alt="돋보기 아이콘"> 극장찾기</button>
+         </div><!--.inner-->
+        </div><!--.f_box01-->
+
+        <div class="f_box02">
+          <div class="inner">
+            <div class="f_logo"><img src="img/f_logo.png" alt="메가박스로고 이미지"></div>
+            <p class="f_info">서울특별시 마포구 월드컵로 240, 지상2층(성산동, 월드컵주경기장) ARS 1544-0070<br>
+              대표자명 김진선 · 사업자등록번호 211-86-59478 · 통신판매업신고번호 제 833호 <br>
+              <span>COPYRIGHT © MegaboxJoongAng, Inc. All rights reserved</span></p>
+            <div class="sns">
+              <a href="#"><img src="img/twiter.png" alt="트위터 이미지"></a>
+              <a href="#"><img src="img/facebook.png" alt="페이스북 이미지"></a>
+              <a href="#"><img src="img/instargram.png" alt="인스타그램 이미지"></a>
+            </div>
+          </div><!--.inner-->
+        </div><!--.f_box02-->
+      
+    </footer>
+
+    <a href="#" class="go_top"><img src="img/go_top.png" alt="top버튼">TOP</a>
+    
+    <script src="js/script.js"></script>
+  
+  
+  </div><!--#wrap-->
+
+  
+</body>
+</html>

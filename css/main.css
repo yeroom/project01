@@ -1,0 +1,438 @@
+@charset "utf-8";
+
+
+h2{margin-bottom: 15px; font-size: 22px;}
+
+
+/* Mobile 380 */
+#wrap{min-width: 320px; margin: 0 auto;}
+header{width:100%; height: 55px; background-color: #fff; position: relative;  position: fixed; z-index: 999; border-bottom: 1px solid #ccc;}
+h1{position: absolute; top:50%; left: 50%; transform: translate(-50%,-50%);}
+h1 a{
+  display: block; width: 43px; height: 36px; color: transparent; font-size: 0;
+  background-image: url(../img/h_logo_purple.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+
+header .fixed{border-bottom: 1px solid #ccc;}  
+nav{display: none;}
+
+.nav_btn{display: block; width: 55px; height: 55px; padding-top: 20px; padding-left: 19px;}
+.nav_btn span{display: block; width: 18px; height: 2px; background-color: #555; color: transparent; font-size: 0; margin-bottom: 5px;}
+
+.side_nav{position: absolute; top:0; right: 0;}
+.side_nav a{display: block; width: 30px; height: 55px; float: left; font-size: 0; color: transparent;}
+.side_nav .login{background: url(../img/login_black.png) no-repeat center / 20px auto;}
+.side_nav .mypage{background: url(../img/mypage_black.png) no-repeat center / 20px auto;}
+.side_nav .heart{background: url(../img/heart_black.png) no-repeat center / 20px auto; margin-right: 10px;}
+
+
+/* 슬라이드 */
+.slide{ position: relative; padding-top: 55px;}
+.slide img{width: 100%;}
+
+.s_arrow a{display: none;}
+.mySwiper{ position: relative;}
+.mySwiper .swiper-button-next:after, .mySwiper .swiper-button-prev:after{content: none;}
+
+
+
+
+.circle{position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%);}
+.circle a{display: inline-block; width: 5px; height: 5px; background-color: #fff; border-radius: 50%; margin-right: 20px; margin-bottom: 2px;}
+.circle a.on{width: 10px; height: 10px; background-color: transparent; border:2px solid #fff; margin-bottom: 0;}
+
+/* ----------------메뉴바---------------- */
+.ticket_box{background-color: #5e3da0; height: 110px; padding-top: 15px;}
+.ticket_box .inner{width: 340px; margin: 0 auto;}
+.search{border: 1px solid #fff;border-radius: 20px; padding: 0px 10px; position: relative; width: 220px; margin: 0 auto;}
+.search input{ background-color: transparent; padding: 5px;  outline: none; color: #fff; border:none;}
+.ticket_box input::placeholder {color:#ccc;}
+.search button{background-color: transparent; border: none;  position: absolute; top:4px; right: 10px;}
+.search button img{width: 80%;}
+
+.ticket_box .t_box01,.t_box02,.t_box03{float: left; width:calc(100% /3); text-align: center; border-right: 1px solid #999; margin-top: 20px;}
+.ticket_box li:last-child{border-right: none;}
+.ticket_box li a{display:block; color: #fff; font-size: 12px;}
+.ticket_box li:hover a{color:#4fbdca;}
+.ticket_box img{display: none;}
+.search img{display: block;}
+
+
+
+
+/*--------------- 무비차트--------------- */
+#moviechart{padding: 50px 0px 50px 20px;margin: 0 auto; text-align: center; position: relative}
+#moviechart h2{margin-bottom: 20px;}
+.title_en {display: none;}
+
+.mc_box{overflow: hidden; padding: 10px;}
+#moviechart ul{width: 700px; padding-top: 20px;}
+#moviechart ul li{float: left; width:calc((100% - 30px) / 4); margin-right: 10px; position: relative;}
+#moviechart ul li:last-child{margin-right: 0;}
+#moviechart ul li img{width: 100%;}
+#moviechart img.star{display: inline-block; width: 10px; height: 10px;  margin-right: 2px; margin-top: 4px;}
+
+.over_box{position: relative; margin-bottom: 10px; transition: all 0.5s;}
+#moviechart ul li .over{position: absolute; top:0; left: 0; background-color: rgba(0,0,0,0.8); opacity: 0; width: 100%; height: 100%; border-radius: 5%; transition: all 0.5s;}
+#moviechart ul li:hover .over{opacity: 1; box-shadow:rgba(0,0,0,0.5) 10px 10px 10px;}
+#moviechart ul li:hover .over_box{transform: translateY(-20px);}
+
+.m_name{font-size: 18px; font-weight: bold;}
+.m_txt{font-size: 14px;}
+
+
+.over p{color: #fff; border:1px solid #fff; border-radius: 30px; display: block; width: 100px; height: 40px; font-size: 12px; text-align: center; line-height: 36px;position: absolute; top:50%; left: 50%; transform: translate(-50%,-50%);}
+
+#moviechart .swiper-button-next:after, #moviechart .swiper-button-prev:after{content: none;}
+
+
+
+
+/*------------------- 예고편 -----------------*/
+
+#trailer{text-align: center; padding: 0 20px;}
+#trailer h2{margin: 30px 0 30px;}
+#trailer li{margin: 0 auto; box-shadow: 10px 10px 10px #555; height: 260px;}
+#trailer iframe{width: 100%;}
+#trailer img{width:100%}
+
+#trailer li{display: none;}
+#trailer li.trailer2{display: block; position: relative;}
+.t_play {width: 60px; position: absolute; top:50%; left: 50%; transform: translate(-50%,-50%);}
+.t_arrow{display: none;}
+.more{display: inline-block; width: 100px; height: 40px; border: 1px solid #ccc; border-radius: 30px;; font-size: 12px; color:#555 ; text-align: center; line-height: 38px; margin: 40px 0; transition: all 0.5s; }
+.more:hover{color: #9e55c9; border: 1px solid #9e55c9;}
+
+
+
+
+
+
+/* -----------M-BOX TICKET------------- */
+#mbox_ticker{height: 420px; position: relative;
+    background-color: #eaf5ff; text-align: center; padding-top: 50px; margin-bottom: 100px;}
+#mbox_ticker .mbox_txt{margin-bottom: 50px; font-size: 12px;}
+#mbox_ticker ul li{float: left; width: calc(100% / 3);}
+#mbox_ticker ul li:last-child{margin-right: 0;}
+#mbox_ticker ul li a{display: block; width:100px; height: 100px; background-color: #fff; border-radius: 50%; position: relative; margin: 0 auto;}
+#mbox_ticker ul li a img{ width: 70%; position: absolute; top:50%; left: 50%; transform: translate(-50%,-50%);  transition: all 0.3s;}
+#mbox_ticker ul li p{color:#555; font-size: 10px; margin-top: 25px; line-height: 1.4 ;}
+#mbox_ticker ul li p span{font-weight: 600; color: #333;}
+#mbox_ticker ul li a:hover img{transform: translate(calc(-50%),calc(-50% - 15px));}
+#mbox_ticker .bg_txt{position: absolute; bottom: -30px; left: 50px;}
+#mbox_ticker .bg_txt img{width: 100%;}
+
+
+
+/* ------------------돌비시네마---------------- */
+#cinema{height: 250px; background:url(../img/dolby.png) no-repeat center / cover; color: #fff; text-align: center; padding: 40px 0;}
+#cinema p{margin-top :20px; font-size: 10px; line-height: 1.6;}
+#cinema .more{color: #fff;}
+#cinema .more:hover{border: 1px solid #4fbdca; color: #4fbdca;} 
+
+
+/* -------------------moviefeed----------------- */
+#moviefeed {padding: 0 40px; text-align: center; max-width: 400px; margin: 0 auto;}
+#moviefeed h2{text-align: center; margin-top: 60px; margin-bottom: 40px;}
+#moviefeed li{ margin-bottom: 30px;}
+#moviefeed li:hover .feed_title{color: #4fbdca;}
+#moviefeed li:hover .feed_txt{text-decoration: underline;}
+.feed_img img{width: 100%; margin-bottom: 10px;}
+.feed_title{font-weight: bold; font-size: 14px; margin-bottom: 10px; text-align: left;}
+.feed_txt{font-size: 11px; text-align: justify;} 
+
+
+/* --------------footer--------------------- */
+
+footer .inner{padding: 0 20px; text-align: center; margin: 0 auto;}
+.f_box01{height: 28px;
+  background-color: #f8f8fa; padding-top: 7px; text-align: center;}
+.f_link{display: inline-block;}
+.f_link li{float: left;border-right: 1px solid #ccc;}
+.f_link li:last-child{border-right: none;}
+.f_link li:nth-child(4), .f_link li:nth-child(5){display: none;}
+.f_link li a{display:block;  font-size: 10px; text-align: center; padding: 0 10px;}
+.f_link li:hover a{color: #4fbdca;}
+.f_search{display: none;}
+
+.f_box02{padding: 20px 0; position: relative; height: 180px; background-color: #333;}
+.f_logo{width: 58.5px;}
+.f_logo img{width: 100%;}
+.f_info{font-size: 10px; color: #ccc; margin-top: 20px; line-height: 1.6; text-align: left;}
+.f_info span{font-style: italic;}
+.sns{position: absolute; top: 20px; right: 20px;}
+.sns a {display:inline-block; width: 25px; height: 25px; position: relative; opacity: 0.7;}
+.sns a img{width: 100%;}
+.sns a:hover{opacity: 1;}
+
+.go_top{display: none;}
+
+/* 스크립트css */
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+/* Tablet 1200px */
+@media screen and (min-width:1000px) {
+  header{height: 110px;}
+  header .inner{width: 1000px; margin: 0 auto; position: relative; height: 110px;}
+  h1{position: absolute; left:0; transform: translateY(-50%);}
+  h1 a{width: 86px; height: 72px;}
+
+  nav{display: block; position: absolute; top:50%; left: 50%; transform: translate(-50%,-50%);}
+  nav li{float: left;}
+  nav li a{display: block; padding: 45px 20px; color: #555; font-size: 18px;}
+  nav li:hover a{color: #76359b; border-bottom: 4px solid #76359b; padding-bottom: 39px;}
+
+  .nav_btn{display: none;}
+
+  .side_nav{ position: absolute; top:50%; transform: translateY(-50%);}
+  .side_nav .login, .side_nav .mypage, .side_nav .heart{background-size: 30px 30px; padding: 40px 25px;}
+
+  .slide{padding-top: 110px;}
+
+  .circle a{width: 10px; height: 10px; margin-bottom: 4px;}
+  .circle a.on{width: 20px; height: 20px;}
+
+  .mySwiper .swiper-button-next{margin-right: 50px;}
+  .mySwiper .swiper-button-prev{margin-left: 50px;}
+
+
+  .s_arrow a{display: block;}
+  .s_left{position: absolute; top:50%; left: 110px;}
+  .s_right{position: absolute; top:50%; right: 110px;}
+
+
+
+  /* ---------------메뉴바--------------- */
+  .ticket_box{height: 130px;}
+  .ticket_box .inner{width: 1000px; margin: 0 auto; padding: 15px 0;}
+  .search{float: left; margin-top: 20px; padding: 5px 20px;}
+  
+  .ticket_box .t_box01{width: calc(100% / 4); margin-top: 8px;}
+  .ticket_box .search{width: calc((100% / 4) - 30px); margin-right: 30px;}
+  .search button{ top:9px;}
+  .ticket_box .t_box01:first-child{border-left: 1px solid #999;}
+  .ticket_box ul li a{font-size: 16px;}
+  .ticket_box img{display: block; margin: 0 auto; margin-bottom: 5px;}
+  .t_box01 a img{transition: all 0.3s;}
+  .t_box01 a:hover img{transform: translateY(-7px);}
+  .t_box01 a:hover{font-weight: bold;}
+
+  /*------------- 무비차트-------------- */
+  #moviechart .inner{position: relative; width: 1000px; margin: 0 auto;}
+  h2{font-size: 40px; margin-top:30px; margin-bottom: 7px;}
+  .title_en {display: block; font-size: 26px; margin-bottom: 50px;}
+
+  .mc_box{overflow:visible; padding: 0;}
+  #moviechart ul{width: 100%;}
+
+
+  #moviechart img.star{width: 20px; height: 20px; margin-top: 0px;}
+  #moviechart ul li{width: calc((100% - 60px) / 4); margin-right: 20px;}
+  #moviechart ul li .over{border-radius: 20px;}
+
+  .over p{width: 120px; height: 40px; font-size: 16px; line-height: 40px;}
+  .over_box{margin-bottom: 20px;}
+  .m_name{font-size: 20px; margin-bottom: 7px;}
+  .m_txt{font-size: 16px;}
+  .m_arrow{display: block;}
+  #moviechart .swiper-button-prev{position: absolute; top:57%; left: -60px;}
+  #moviechart .swiper-button-next{position: absolute; top:57%; right: -60px;}
+  #moviechart .swiper-button-next:after, #moviechart .swiper-button-prev:after{content: none;}
+
+
+
+
+  /* ----------------예고편----------------- */
+
+  #trailer{width:100%; padding-bottom: 300px; position: relative;}
+  #trailer h2{margin-top: 110px;}
+  .trailer1, .trailer3{display: block;}
+  #trailer li{display: block; width: 100%; height: 200px; float: left;}
+
+  .t_play{width: 115px;}
+  .mySwiper3{position: relative;}
+  .mySwiper3 .swiper-button-next{color: #bca9e4; position: absolute; top:40%; right: 32%;}
+
+  .mySwiper3 .swiper-button-prev{color: #bca9e4;  position: absolute; top:40%; left: 32%;}
+
+  /* #trailer .more{margin-top: 550px;} */
+  .more{ font-size: 16px; width: 150px; height: 60px; line-height: 58px; font-weight: 600;}
+  #trailer .more{position: absolute; bottom: 120px; left: 50%; transform: translateX(-50%);}
+
+/* ---------------M-BOX TICKET---------------- */
+  #mbox_ticker{height: 800px; margin-bottom: 230px;}
+  #mbox_ticker .inner{width: 1000px; margin: 0 auto;}
+  #mbox_ticker ul li a{ width:250px; height: 250px;}
+  #mbox_ticker ul li p{font-size: 16px;}
+  #mbox_ticker .mbox_txt{margin-top: 20px; font-size: 16px;}
+
+/* ------------------돌비시네마--------------- */
+#cinema{height: 430px; padding-top: 60px;}
+#cinema p{font-size: 18px; margin-top: 45px;}
+
+/* -------------------moviefeed----------------- */
+#moviefeed{max-width: none;}
+#moviefeed .inner{width: 1000px; margin: 0 auto;}
+#moviefeed h2{text-align: center; margin-top: 60px; margin-bottom: 40px;}
+.feed_box{max-width: 700px; margin: 0 auto;}
+#moviefeed li{border: 1px solid #eee; margin-bottom: 20px; }
+#moviefeed li a{display: block; text-align: left;}
+.feed_img{width: 215px; float: left;}
+.feed_img img{width: 100%; margin-bottom: 0;}
+.feed_txtbox{float: left; padding: 15px;}
+.feed_txtbox{display: inline-block; width: calc(100% - 215px);}
+.feed_title{font-weight: bold; font-size: 14px; margin-bottom: 10px;}
+.feed_txt{font-size: 11px; text-align: justify;}
+
+
+
+/* -------------------footer-------------- */
+footer{margin-top: 140px;}
+footer .inner{width: 1000px; margin: 0 auto; text-align: left; position: relative;}
+.f_box01{height: 50px;}
+
+.f_link{margin-top: 8px;} 
+.f_link li a{font-size: 14px;  padding: 0 20px;}
+.f_link li:nth-child(4), .f_link li:nth-child(5){display: block;}
+
+
+.f_box02{height: 210px;padding-top: 60px;}
+.f_logo{width: 117px;}
+.f_info{position: absolute; top: 0; left: 165px; font-size: 14px; margin-top: 10px;}
+.sns{position: absolute; top:-40px;}
+.sns a{width: 32px; margin-left: 6px;}
+
+.f_search{display: block; color: #555; position: absolute; top:3px; right: 20px; border: 1px solid #999; border-radius: 20px; width: 107px; height: 31px; line-height: 31px;}
+.f_search:hover{background-color: rgb(228, 228, 228);}
+.f_search img{margin-top: 7px;}
+
+
+
+
+}
+
+
+ 
+
+/* Desktop 1920px */
+@media screen and (min-width:1200px) {
+  header{background-color: transparent;
+     border-bottom: 1px solid #fff;}
+  header .inner{width: 1200px; margin: 0 auto; height: 110px;}
+
+  h1 a{background-image: url(../img/h_logo_white.png);}
+  
+  nav li a{color: #fff; margin-right: 10px; }
+
+  .side_nav .login{background-image: url(../img/icon_login.png);}
+  .side_nav .mypage{background-image: url(../img/icon_mypage.png);}
+  .side_nav .heart{background-image: url(../img/icon_heart.png);}
+
+  /* 마우스 스크롤시 */
+  header.fixed{background-color: #fff; height: 110px; transition: all 0.5s; border-bottom: 1px solid #ccc;}
+  header.fixed ul li a{color: #333; transition: all 0.5s;}
+  header.fixed h1 a{background-image: url(../img/h_logo_purple.png);}
+
+  
+  header.fixed .side_nav .login{background-image: url(../img/login_black.png);}
+  header.fixed .side_nav .mypage{background-image: url(../img/mypage_black.png);}
+  header.fixed .side_nav .heart{background-image: url(../img/heart_black.png);}
+
+
+  .slide{padding-top: 0;}
+
+  /* ----------------메뉴바------------- */
+  .ticket_box .inner{width: 1200px; margin: 0 auto;}
+  .ticket_box img{display: inline-block; margin-right: 10px;}
+  .ticket_box a{line-height: 45px; margin-top: 10px;}
+  .search img{margin-right: 0;}
+
+  h2{font-size: 45px;}
+  .m_name{font-size: 25px;}
+  .m_txt{font-size: 20px;}
+
+  .over p{width: 170px; height: 60px; font-size: 20px; line-height: 60px;}
+
+
+  #moviechart img.star{margin-top: 3px;}
+
+
+  #trailer li{height: 330px;}
+
+  /* -----------M-BOX TICKET------------- */
+  #mbox_ticker{padding: 100px 0; height: 550px;}
+  #mbox_ticker .inner{width: 1200px; margin: 0 auto; position: relative;}
+  .mbox_txtbox{position: absolute; top:15px; left: 0;}
+
+  #mbox_ticker h2, .mbox_txt{text-align: left;}
+  .mbox_img{position: absolute; top:0px; right: 0;}
+  .mbox_img li{padding: 20px;}
+  #mbox_ticker .more{ position: absolute; top:150px; left: 0;}
+  #mbox_ticker .bg_txt{position: absolute; bottom: -550px; left: 100px;}
+ 
+
+
+/* -------------moviefeed---------------------- */
+  #moviefeed .inner{width: 1200px; margin: 0 auto;}
+  #moviefeed h2{margin: 120px 0 70px;}
+  .feed_box{max-width:none}
+
+  .feed_img, .feed_txtbox{float: none;}
+  #moviefeed li{float: left; width: calc((100% - 60px) / 3); border: none; margin-right: 30px;}
+  #moviefeed li:last-child{margin-right: 0;}
+  .feed_txtbox{width: 100%; padding: 15px 0;}
+  .feed_img{width: 100%;}
+  #moviefeed h2{margin: 130px 0 60px;}
+  .feed_title{font-size: 22px;}
+  .feed_txt{font-size: 14px;}
+
+
+  footer .inner{width: 1200px;} 
+
+  .go_top{
+    display: block;
+    width:76px; height: 76px;
+    position: fixed; bottom: 30px; right: 5%;
+    z-index: 999;
+    font-size: 0; color:transparent;}
+
+  
+
+
+}
