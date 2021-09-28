@@ -15,7 +15,6 @@
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-  
 
 </head>
 <body>
@@ -25,11 +24,40 @@
         <h1><a href="index.html">MEGABOX</a></h1>
         <nav>
           <ul>
-            <li><a href="sub01.html">MOVIE</a></li>
-            <li><a href="#">TICKET</a></li>
-            <li><a href="#">CINEMA</a></li>
-            <li><a href="#">EVENT</a></li>
-            <li><a href="#">STORE</a></li>
+            <li><a href="sub01.html">MOVIE</a>
+              <ul class="submenu">
+                <li><a href="sub01.html">현재상영작</a></li>
+                <li><a href="#">상영예정작</a></li>
+                <li><a href="#">N스크린</a></li>
+              </ul>
+            </li>
+            <li><a href="#">TICKET</a>
+              <ul class="submenu">
+                <li><a href="#">빠른예매</a></li>
+                <li><a href="#">상영시간표</a></li>
+                <li><a href="#">프라이빗예매</a></li>
+              </ul>
+            </li>
+            <li><a href="#">CINEMA</a>
+              <ul class="submenu">
+                <li><a href="#">전체극장</a></li>
+                <li><a href="#">특별관</a></li>
+              </ul>
+            </li>
+            <li><a href="#">EVENT</a>
+              <ul class="submenu">
+                <li><a href="#">진행중 이벤트</a></li>
+                <li><a href="#">지난 이벤트</a></li>
+                <li><a href="#">당첨자발표</a></li>
+              </ul>
+            </li>
+            <li><a href="#">STORE</a>
+              <ul class="submenu">
+                <li><a href="#">베스트</a></li>
+                <li><a href="#">관람권</a></li>
+                <li><a href="#">스낵/음료</a></li>
+              </ul>
+            </li>
           </ul>
         </nav>
         <a href="#" class="nav_btn">
@@ -163,16 +191,6 @@
                 <p class="m_txt">예매율 35.5%ㅣ<img src="img/star_mini.png" alt="별점이미지" class="star">6.9</p>
               </a>
             </li>
-            <li class="movie02 swiper-slide">
-              <a href="#">
-                <div class="over_box">
-                  <img src="img/poster4.png" alt="영화 포스터 이미지">
-                  <div class="over"><p>예매하기</p></div>
-                </div>
-                <p class="m_name">모가디슈</p>
-                <p class="m_txt">예매율 35.5%ㅣ<img src="img/star_mini.png" alt="별점이미지" class="star">9.1</p>
-              </a>
-            </li>
           </ul>
         </div><!--.mc_box-->
         <div class="swiper-button-next"><img src="img/sc_right.png" alt="다음버튼"></div>
@@ -186,8 +204,7 @@
       <p class="title_en">Trailer</p>
       <ul class="clear swiper-wrapper">
         <li class="trailer1 swiper-slide">
-          <!-- <iframe src="https://www.youtube.com/embed/_Pg2ieBoPQA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-          <a href="video/movie1.mp4"><img src="img/trailer1.png"></a>
+          <iframe src="https://www.youtube.com/embed/BryJA-Xp-Q4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </li>
         <li class="trailer2 swiper-slide">
           <iframe 

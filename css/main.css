@@ -86,7 +86,7 @@ nav{display: none;}
 
 .over p{color: #fff; border:1px solid #fff; border-radius: 30px; display: block; width: 100px; height: 40px; font-size: 12px; text-align: center; line-height: 36px;position: absolute; top:50%; left: 50%; transform: translate(-50%,-50%);}
 
-#moviechart .swiper-button-next:after, #moviechart .swiper-button-prev:after{content: none;}
+#moviechart .swiper-button-next,#moviechart .swiper-button-prev{display: none;}
 
 
 
@@ -106,7 +106,7 @@ nav{display: none;}
 .more{display: inline-block; width: 100px; height: 40px; border: 1px solid #ccc; border-radius: 30px;; font-size: 12px; color:#555 ; text-align: center; line-height: 38px; margin: 40px 0; transition: all 0.5s; }
 .more:hover{color: #9e55c9; border: 1px solid #9e55c9;}
 
-
+.mySwiper3 .swiper-button-next,.mySwiper3 .swiper-button-prev{display: none;}
 
 
 
@@ -214,9 +214,20 @@ footer .inner{padding: 0 20px; text-align: center; margin: 0 auto;}
   h1 a{width: 86px; height: 72px;}
 
   nav{display: block; position: absolute; top:50%; left: 50%; transform: translate(-50%,-50%);}
-  nav li{float: left;}
-  nav li a{display: block; padding: 45px 20px; color: #555; font-size: 18px;}
-  nav li:hover a{color: #76359b; border-bottom: 4px solid #76359b; padding-bottom: 39px;}
+  nav > ul > li{float: left; position: relative;}
+  nav > ul > li > a{display: block; padding: 45px 20px; color: #333; font-size: 18px;}
+  nav > ul > li:hover > a{color: #76359b; border-bottom: 4px solid #76359b; padding-bottom: 39px;}
+
+
+  
+  nav ul li .submenu{
+    display:none; 
+    position: absolute; left: -15px; top: 111px; background-color: #333; width: 130px;}
+  nav ul li .submenu li{width: 100%; height: 50px;}
+  nav ul li .submenu li a{display: block; width: 100%; color: #fff; text-align: center; line-height: 50px;}
+  nav ul li .submenu li:hover a{color: #4fbdca}
+
+
 
   .nav_btn{display: none;}
 
@@ -271,8 +282,8 @@ footer .inner{padding: 0 20px; text-align: center; margin: 0 auto;}
   .m_name{font-size: 20px; margin-bottom: 7px;}
   .m_txt{font-size: 16px;}
   .m_arrow{display: block;}
-  #moviechart .swiper-button-prev{position: absolute; top:57%; left: -60px;}
-  #moviechart .swiper-button-next{position: absolute; top:57%; right: -60px;}
+  #moviechart .swiper-button-prev{display:block; position: absolute; top:57%; left: -60px;}
+  #moviechart .swiper-button-next{display:block; position: absolute; top:57%; right: -60px;}
   #moviechart .swiper-button-next:after, #moviechart .swiper-button-prev:after{content: none;}
 
 
@@ -287,9 +298,9 @@ footer .inner{padding: 0 20px; text-align: center; margin: 0 auto;}
 
   .t_play{width: 115px;}
   .mySwiper3{position: relative;}
-  .mySwiper3 .swiper-button-next{color: #bca9e4; position: absolute; top:40%; right: 32%;}
+  .mySwiper3 .swiper-button-next{display:block; color: #bca9e4; position: absolute; top:40%; right: 32%;}
 
-  .mySwiper3 .swiper-button-prev{color: #bca9e4;  position: absolute; top:40%; left: 32%;}
+  .mySwiper3 .swiper-button-prev{display:block; color: #bca9e4;  position: absolute; top:40%; left: 32%;}
 
   /* #trailer .more{margin-top: 550px;} */
   .more{ font-size: 16px; width: 150px; height: 60px; line-height: 58px; font-weight: 600;}
@@ -358,7 +369,7 @@ footer .inner{width: 1000px; margin: 0 auto; text-align: left; position: relativ
 
   h1 a{background-image: url(../img/h_logo_white.png);}
   
-  nav li a{color: #fff; margin-right: 10px; }
+  nav > ul > li > a{color: #fff; margin-right: 10px; }
 
   .side_nav .login{background-image: url(../img/icon_login.png);}
   .side_nav .mypage{background-image: url(../img/icon_mypage.png);}
@@ -368,7 +379,7 @@ footer .inner{width: 1000px; margin: 0 auto; text-align: left; position: relativ
   header.fixed{background-color: #fff; height: 110px; transition: all 0.5s; border-bottom: 1px solid #ccc;}
   header.fixed ul li a{color: #333; transition: all 0.5s;}
   header.fixed h1 a{background-image: url(../img/h_logo_purple.png);}
-
+  header.fixed nav > ul > li:hover > a{color: #5e3da0;}
   
   header.fixed .side_nav .login{background-image: url(../img/login_black.png);}
   header.fixed .side_nav .mypage{background-image: url(../img/mypage_black.png);}

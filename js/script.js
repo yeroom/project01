@@ -11,6 +11,15 @@ $(document).ready(function(){ //시작
     }
   });
 
+  // nav
+  $("nav > ul > li").mouseover(function(){
+    $(this).find(".submenu").stop().slideDown(200);
+  });
+  $("nav > ul > li").mouseout(function(){
+    $(this).find(".submenu").stop().slideUp(200);
+  });
+
+
     // 슬라이드
       var swiper = new Swiper(".mySwiper", {
         spaceBetween: 0,
@@ -31,8 +40,6 @@ $(document).ready(function(){ //시작
         mousewheel: true,
         keyboard: true,
         
-        
-        
       });
 
       // 무비차트
@@ -40,6 +47,10 @@ $(document).ready(function(){ //시작
         slidesPerView: 4,
         spaceBetween: 30,
         freeMode: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
         navigation: {
           nextEl: "#moviechart .swiper-button-next",
           prevEl: "#moviechart .swiper-button-prev",
