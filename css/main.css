@@ -93,7 +93,7 @@ nav{display: none;}
 
 /*------------------- 예고편 -----------------*/
 
-#trailer{text-align: center; padding: 0 20px;}
+#trailer{text-align: center; padding: 0 20px; overflow: hidden;}
 #trailer h2{margin: 30px 0 30px;}
 #trailer li{margin: 0 auto; box-shadow: 10px 10px 10px #555; height: 260px;}
 #trailer iframe{width: 100%;}
@@ -107,8 +107,6 @@ nav{display: none;}
 .more:hover{color: #9e55c9; border: 1px solid #9e55c9;}
 
 .mySwiper3 .swiper-button-next,.mySwiper3 .swiper-button-prev{display: none;}
-
-
 
 
 /* -----------M-BOX TICKET------------- */
@@ -298,9 +296,9 @@ footer .inner{padding: 0 20px; text-align: center; margin: 0 auto;}
 
   .t_play{width: 115px;}
   .mySwiper3{position: relative;}
-  .mySwiper3 .swiper-button-next{display:block; color: #bca9e4; position: absolute; top:40%; right: 32%;}
+  .mySwiper3 .swiper-button-next{display:block; color: #bca9e4; position: absolute; top:50%; right: 32%;}
 
-  .mySwiper3 .swiper-button-prev{display:block; color: #bca9e4;  position: absolute; top:40%; left: 32%;}
+  .mySwiper3 .swiper-button-prev{display:block; color: #bca9e4;  position: absolute; top:50%; left: 32%;}
 
   /* #trailer .more{margin-top: 550px;} */
   .more{ font-size: 16px; width: 150px; height: 60px; line-height: 58px; font-weight: 600;}
